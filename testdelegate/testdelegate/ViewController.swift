@@ -13,6 +13,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let button = UIButton()
+        button.frame.size = CGSizeMake(100, 50)
+        button.center = self.view.center
+        button.setTitle("Start Modal", forState: UIControlState.Normal)
+        button.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
+        button.addTarget(self, action: "tapButton:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(button)
+        
+    }
+    
+    
+    func tapButton(sender: AnyObject) {
+        showModal()
+//        performSegueWithIdentifier("modalSegue", sender: self)
+        
+ 
     }
     
     override func didReceiveMemoryWarning() {

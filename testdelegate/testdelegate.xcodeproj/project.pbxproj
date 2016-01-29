@@ -15,6 +15,7 @@
 		E76F25F81C5B0BD000FD5E77 /* testdelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F25F71C5B0BD000FD5E77 /* testdelegateTests.swift */; };
 		E76F26031C5B0BD000FD5E77 /* testdelegateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F26021C5B0BD000FD5E77 /* testdelegateUITests.swift */; };
 		E76F26111C5B0D0500FD5E77 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F26101C5B0D0500FD5E77 /* ModalView.swift */; };
+		E76F26131C5B240E00FD5E77 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F26121C5B240E00FD5E77 /* ModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E76F26021C5B0BD000FD5E77 /* testdelegateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testdelegateUITests.swift; sourceTree = "<group>"; };
 		E76F26041C5B0BD000FD5E77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E76F26101C5B0D0500FD5E77 /* ModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		E76F26121C5B240E00FD5E77 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				E76F25E41C5B0BD000FD5E77 /* ViewController.swift */,
 				E76F26101C5B0D0500FD5E77 /* ModalView.swift */,
 				E76F25E61C5B0BD000FD5E77 /* Main.storyboard */,
+				E76F26121C5B240E00FD5E77 /* ModalViewController.swift */,
 				E76F25E91C5B0BD000FD5E77 /* Assets.xcassets */,
 				E76F25EB1C5B0BD000FD5E77 /* LaunchScreen.storyboard */,
 				E76F25EE1C5B0BD000FD5E77 /* Info.plist */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76F26131C5B240E00FD5E77 /* ModalViewController.swift in Sources */,
 				E76F26111C5B0D0500FD5E77 /* ModalView.swift in Sources */,
 				E76F25E51C5B0BD000FD5E77 /* ViewController.swift in Sources */,
 				E76F25E31C5B0BD000FD5E77 /* AppDelegate.swift in Sources */,
