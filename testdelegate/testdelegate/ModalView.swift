@@ -10,8 +10,13 @@ import UIKit
 
 import UIKit
 
+@objc protocol ModalViewDelegate{
+    func close(text:String)
+}
+
 class ModalView: UIView, UITextFieldDelegate {
     let textField = UITextField()
+    weak var modalViewDelegate: ModalViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -50,6 +55,7 @@ class ModalView: UIView, UITextFieldDelegate {
     
     //closeボタンがタップされた時に呼ばれるメソッド
     func close() {
+        modalViewDelegate!.close(textField.text!)
         self.removeFromSuperview()
     }
     

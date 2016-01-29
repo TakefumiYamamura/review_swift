@@ -8,12 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ModalViewDelegate {
     @IBOutlet weak var label: UILabel!
+    let button = UIButton()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let button = UIButton()
         button.frame.size = CGSizeMake(100, 50)
         button.center = self.view.center
         button.setTitle("Start Modal", forState: UIControlState.Normal)
@@ -43,6 +44,11 @@ class ViewController: UIViewController {
     //ModalViewを表示する
     func showModal() {
         let modalView = ModalView(frame: self.view.bounds)
+        modalView.modalViewDelegate = self
         self.view.addSubview(modalView)
+    }
+    
+    func close(text:String) {
+        button.setTitle(text, forState: UIControlState.Normal)
     }
 }
