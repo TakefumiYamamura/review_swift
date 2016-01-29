@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--todo一覧-->
@@ -30,10 +31,113 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="todo一覧" id="tR0-aJ-9vk"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="RsT-0T-KAn" kind="presentation" identifier="presentNewTodoViewController" id="3E2-aN-LVL"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vsr-tc-5pb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194.5" y="-458.5"/>
+            <point key="canvasLocation" x="2006.5" y="-458.5"/>
+        </scene>
+        <!--新規Todo作成画面-->
+        <scene sceneID="HrD-Gk-QcV">
+            <objects>
+                <viewController id="YBi-ew-uqU" customClass="NewTodoViewController" customModule="AgainToDo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qhq-Sl-UcO"/>
+                        <viewControllerLayoutGuide type="bottom" id="x46-p8-qjv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GPS-5F-uTu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mo5-OF-WS6">
+                                <rect key="frame" x="16" y="94" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mg2-5x-W4b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pfm-zI-Tek">
+                                <rect key="frame" x="16" y="125" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fWx-GI-e6C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d52-vq-Fka">
+                                <rect key="frame" x="16" y="185" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="j4f-zI-NkJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qdU-PC-mgo">
+                                <rect key="frame" x="16" y="216" width="343" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Foz-km-Qv1"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="54P-O6-CEx">
+                                <rect key="frame" x="16" y="377" width="167" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Pw1-U9-fyP"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Low"/>
+                                    <segment title="Middle"/>
+                                    <segment title="High"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Priority" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utG-jE-zZ2">
+                                <rect key="frame" x="16" y="346" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mo5-OF-WS6" firstAttribute="leading" secondItem="GPS-5F-uTu" secondAttribute="leadingMargin" id="13V-VY-wSR"/>
+                            <constraint firstItem="qdU-PC-mgo" firstAttribute="leading" secondItem="GPS-5F-uTu" secondAttribute="leadingMargin" id="1La-Gx-rhb"/>
+                            <constraint firstItem="Pfm-zI-Tek" firstAttribute="top" secondItem="Mo5-OF-WS6" secondAttribute="bottom" constant="10" id="2DR-yD-OgZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pfm-zI-Tek" secondAttribute="trailing" id="4T5-OB-Bae"/>
+                            <constraint firstItem="54P-O6-CEx" firstAttribute="leading" secondItem="GPS-5F-uTu" secondAttribute="leadingMargin" id="9JV-B0-gdC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mo5-OF-WS6" secondAttribute="trailing" id="A5k-3x-k2j"/>
+                            <constraint firstItem="Mo5-OF-WS6" firstAttribute="top" secondItem="qhq-Sl-UcO" secondAttribute="bottom" constant="30" id="AbU-MF-Oi4"/>
+                            <constraint firstItem="utG-jE-zZ2" firstAttribute="top" secondItem="qdU-PC-mgo" secondAttribute="bottom" constant="30" id="CGa-vJ-BL8"/>
+                            <constraint firstItem="d52-vq-Fka" firstAttribute="leading" secondItem="GPS-5F-uTu" secondAttribute="leadingMargin" id="DPr-rH-Y8l"/>
+                            <constraint firstItem="d52-vq-Fka" firstAttribute="top" secondItem="Pfm-zI-Tek" secondAttribute="bottom" constant="30" id="GJx-P9-5H0"/>
+                            <constraint firstItem="Pfm-zI-Tek" firstAttribute="leading" secondItem="GPS-5F-uTu" secondAttribute="leadingMargin" id="IPB-2g-WAw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qdU-PC-mgo" secondAttribute="trailing" id="OaJ-Wk-0Dc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d52-vq-Fka" secondAttribute="trailing" id="Ts2-iM-V1F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="utG-jE-zZ2" secondAttribute="trailing" id="nZy-zC-YWF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="54P-O6-CEx" secondAttribute="trailing" priority="10" id="ngg-g5-ZQK"/>
+                            <constraint firstItem="utG-jE-zZ2" firstAttribute="leading" secondItem="GPS-5F-uTu" secondAttribute="leadingMargin" id="q0Z-Cp-beJ"/>
+                            <constraint firstItem="qdU-PC-mgo" firstAttribute="top" secondItem="d52-vq-Fka" secondAttribute="bottom" constant="10" id="q3m-lX-gJd"/>
+                            <constraint firstItem="54P-O6-CEx" firstAttribute="top" secondItem="utG-jE-zZ2" secondAttribute="bottom" constant="10" id="zBn-M2-hIr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="新規Todo作成画面" id="t1r-SX-wvD"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="descriptionView" destination="qdU-PC-mgo" id="fIO-Dc-Cn9"/>
+                        <outlet property="prioritySegment" destination="54P-O6-CEx" id="Ieq-6W-84L"/>
+                        <outlet property="todoField" destination="Pfm-zI-Tek" id="w2R-tb-mM6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9sd-Ei-ZpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2929.5" y="351.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fWG-tU-j7R">
@@ -54,6 +158,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jlO-07-vjG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="383" y="-458"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ceC-aV-cKs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RsT-0T-KAn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F38-fn-IBR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.74117647058823533" green="0.20392156862745098" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YBi-ew-uqU" kind="relationship" relationship="rootViewController" id="nw5-9u-Yqz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1z1-uO-UjY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2433.5" y="-364.5"/>
         </scene>
     </scenes>
 </document>

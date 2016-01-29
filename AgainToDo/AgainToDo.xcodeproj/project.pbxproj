@@ -16,6 +16,7 @@
 		E76F25CC1C59E33D00FD5E77 /* ToDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F25CB1C59E33D00FD5E77 /* ToDoListTableViewController.swift */; };
 		E76F25D11C5A470C00FD5E77 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F25D01C5A470C00FD5E77 /* Todo.swift */; };
 		E76F25D31C5A473B00FD5E77 /* TodoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F25D21C5A473B00FD5E77 /* TodoCollection.swift */; };
+		E76F25D51C5A578300FD5E77 /* NewTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F25D41C5A578300FD5E77 /* NewTodoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E76F25CB1C59E33D00FD5E77 /* ToDoListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoListTableViewController.swift; path = ../ToDoListTableViewController.swift; sourceTree = "<group>"; };
 		E76F25D01C5A470C00FD5E77 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		E76F25D21C5A473B00FD5E77 /* TodoCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoCollection.swift; sourceTree = "<group>"; };
+		E76F25D41C5A578300FD5E77 /* NewTodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTodoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				E76F25CB1C59E33D00FD5E77 /* ToDoListTableViewController.swift */,
+				E76F25D41C5A578300FD5E77 /* NewTodoViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				E76F259E1C59D88500FD5E77 /* AppDelegate.swift in Sources */,
 				E76F25D31C5A473B00FD5E77 /* TodoCollection.swift in Sources */,
 				E76F25D11C5A470C00FD5E77 /* Todo.swift in Sources */,
+				E76F25D51C5A578300FD5E77 /* NewTodoViewController.swift in Sources */,
 				E76F25CC1C59E33D00FD5E77 /* ToDoListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

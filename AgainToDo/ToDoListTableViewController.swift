@@ -21,6 +21,16 @@ class ToDoListTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "新規登録", style: UIBarButtonItemStyle.Plain, target: self, action: "segueNewTodo")
+    }
+    
+    func segueNewTodo() {
+        self.performSegueWithIdentifier("presentNewTodoViewController", sender: self)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
