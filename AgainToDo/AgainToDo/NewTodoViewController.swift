@@ -15,6 +15,8 @@ class NewTodoViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var todoField: UITextField!
     
+    let todoCollection = TodoCollection.sharedInstance
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,12 +54,15 @@ class NewTodoViewController: UIViewController, UITextFieldDelegate {
     
     func save() {
         if todoField.text!.isEmpty {
-            
+            let alertView = UIAlertController(title: "エラー", message: "記述されてにあお", preferredStyle: UIAlertControllerStyle.Alert)
+            alertView.addAction(UIAlertAction(title: "はい", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alertView, animated: true, completion: nil)
         } else {
             let todo = Todo()
             todo.text = todoField.text!
             todo.descript = descriptionView.text
             todo.priority = TodoPriority(rawValue: prioritySegment.selectedSegmentIndex)!
+            self.todoCollection.addTodoCollection(todo)
             self.dismissViewControllerAnimated(true, completion: nil)
         }
         

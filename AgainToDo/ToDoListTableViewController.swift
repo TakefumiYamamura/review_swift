@@ -9,11 +9,12 @@
 import UIKit
 
 class ToDoListTableViewController: UITableViewController {
-    let todoCollection = TodoCollection()
+    let todoCollection = TodoCollection.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.todoCollection.fetchTodos()
+//        self.todoCollection.fetchTodos()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -26,6 +27,7 @@ class ToDoListTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "新規登録", style: UIBarButtonItemStyle.Plain, target: self, action: "segueNewTodo")
+        self.tableView.reloadData()
     }
     
     func segueNewTodo() {
@@ -51,9 +53,15 @@ class ToDoListTableViewController: UITableViewController {
 
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)   
+//        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "reuseIdentifier")
         let todo = self.todoCollection.todos[indexPath.row]
         cell.textLabel?.text = todo.text
+        cell.detailTextLabel?.text = todo.descript
+        var priorityIcon = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: 12))
+        priorityIcon.layer.cornerRadius = 6
+        priorityIcon.backgroundColor = todo.priority.color()
+        cell.accessoryView = priorityIcon
         cell.textLabel?.font = UIFont(name: "HirakakuProN-W3", size: 15)
 
         return cell
