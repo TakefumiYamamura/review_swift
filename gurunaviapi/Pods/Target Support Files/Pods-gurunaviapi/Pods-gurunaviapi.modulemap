@@ -1,0 +1,6 @@
+framework module Pods_gurunaviapi {
+  umbrella header "Pods-gurunaviapi-umbrella.h"
+
+  export *
+  module * { export * }
+}

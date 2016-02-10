@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D15DDFCD073DC7F3AAC2B71 /* Pods_gurunaviapiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AADEE5B94CEB7F5E300A95 /* Pods_gurunaviapiUITests.framework */; };
+		AD65FDFB5E14A63FA1C4DC58 /* Pods_gurunaviapi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745FC7CA565F17F32F6AFFCD /* Pods_gurunaviapi.framework */; };
 		E78DB7831C6ADB5F0042D627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DB7821C6ADB5F0042D627 /* AppDelegate.swift */; };
 		E78DB7851C6ADB5F0042D627 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DB7841C6ADB5F0042D627 /* ViewController.swift */; };
 		E78DB7881C6ADB5F0042D627 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78DB7861C6ADB5F0042D627 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		E78DB78D1C6ADB5F0042D627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78DB78B1C6ADB5F0042D627 /* LaunchScreen.storyboard */; };
 		E78DB7981C6ADB5F0042D627 /* gurunaviapiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DB7971C6ADB5F0042D627 /* gurunaviapiTests.swift */; };
 		E78DB7A31C6ADB5F0042D627 /* gurunaviapiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DB7A21C6ADB5F0042D627 /* gurunaviapiUITests.swift */; };
+		EB14CAAACBB7D32DE7B5A463 /* Pods_gurunaviapiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2453C87F3525FA9970A5EC83 /* Pods_gurunaviapiTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08AADEE5B94CEB7F5E300A95 /* Pods_gurunaviapiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gurunaviapiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2453C87F3525FA9970A5EC83 /* Pods_gurunaviapiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gurunaviapiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49F595D83174EC178B828697 /* Pods-gurunaviapiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gurunaviapiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gurunaviapiTests/Pods-gurunaviapiTests.release.xcconfig"; sourceTree = "<group>"; };
+		4C908102D4866BA4435E24BB /* Pods-gurunaviapi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gurunaviapi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gurunaviapi/Pods-gurunaviapi.debug.xcconfig"; sourceTree = "<group>"; };
+		623A1BA2A6931FE9B1E530CD /* Pods-gurunaviapi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gurunaviapi.release.xcconfig"; path = "Pods/Target Support Files/Pods-gurunaviapi/Pods-gurunaviapi.release.xcconfig"; sourceTree = "<group>"; };
+		745FC7CA565F17F32F6AFFCD /* Pods_gurunaviapi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gurunaviapi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80740C595642B3BDB535E463 /* Pods-gurunaviapiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gurunaviapiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gurunaviapiUITests/Pods-gurunaviapiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D1519E3D2C12673471E884BB /* Pods-gurunaviapiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gurunaviapiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gurunaviapiTests/Pods-gurunaviapiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DBF143CFDA68ACE5CA9E0FDB /* Pods-gurunaviapiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gurunaviapiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gurunaviapiUITests/Pods-gurunaviapiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E78DB77F1C6ADB5F0042D627 /* gurunaviapi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gurunaviapi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78DB7821C6ADB5F0042D627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E78DB7841C6ADB5F0042D627 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD65FDFB5E14A63FA1C4DC58 /* Pods_gurunaviapi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB14CAAACBB7D32DE7B5A463 /* Pods_gurunaviapiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D15DDFCD073DC7F3AAC2B71 /* Pods_gurunaviapiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57AEE673218A7E09514F62DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C908102D4866BA4435E24BB /* Pods-gurunaviapi.debug.xcconfig */,
+				623A1BA2A6931FE9B1E530CD /* Pods-gurunaviapi.release.xcconfig */,
+				D1519E3D2C12673471E884BB /* Pods-gurunaviapiTests.debug.xcconfig */,
+				49F595D83174EC178B828697 /* Pods-gurunaviapiTests.release.xcconfig */,
+				DBF143CFDA68ACE5CA9E0FDB /* Pods-gurunaviapiUITests.debug.xcconfig */,
+				80740C595642B3BDB535E463 /* Pods-gurunaviapiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B41B577F2AE3DC9DFA6EE92C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				745FC7CA565F17F32F6AFFCD /* Pods_gurunaviapi.framework */,
+				2453C87F3525FA9970A5EC83 /* Pods_gurunaviapiTests.framework */,
+				08AADEE5B94CEB7F5E300A95 /* Pods_gurunaviapiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E78DB7761C6ADB5E0042D627 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				E78DB7961C6ADB5F0042D627 /* gurunaviapiTests */,
 				E78DB7A11C6ADB5F0042D627 /* gurunaviapiUITests */,
 				E78DB7801C6ADB5F0042D627 /* Products */,
+				57AEE673218A7E09514F62DE /* Pods */,
+				B41B577F2AE3DC9DFA6EE92C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E78DB7A71C6ADB5F0042D627 /* Build configuration list for PBXNativeTarget "gurunaviapi" */;
 			buildPhases = (
+				843DBAC1922B54C491D3EC7C /* Check Pods Manifest.lock */,
 				E78DB77B1C6ADB5F0042D627 /* Sources */,
 				E78DB77C1C6ADB5F0042D627 /* Frameworks */,
 				E78DB77D1C6ADB5F0042D627 /* Resources */,
+				AAEFE31A6F229E431AB89163 /* Embed Pods Frameworks */,
+				7263EAECB4EBF5C0481C6BB0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E78DB7AA1C6ADB5F0042D627 /* Build configuration list for PBXNativeTarget "gurunaviapiTests" */;
 			buildPhases = (
+				95C6CB6656FEA87DD5C81AB4 /* Check Pods Manifest.lock */,
 				E78DB78F1C6ADB5F0042D627 /* Sources */,
 				E78DB7901C6ADB5F0042D627 /* Frameworks */,
 				E78DB7911C6ADB5F0042D627 /* Resources */,
+				2A521FFB2091E0C32275CD52 /* Embed Pods Frameworks */,
+				92DADFF33FCF09FDB739EF1B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E78DB7AD1C6ADB5F0042D627 /* Build configuration list for PBXNativeTarget "gurunaviapiUITests" */;
 			buildPhases = (
+				B0DD049ED39941C3C28DD12E /* Check Pods Manifest.lock */,
 				E78DB79A1C6ADB5F0042D627 /* Sources */,
 				E78DB79B1C6ADB5F0042D627 /* Frameworks */,
 				E78DB79C1C6ADB5F0042D627 /* Resources */,
+				807264154F6777AFE1CE4165 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +301,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A521FFB2091E0C32275CD52 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gurunaviapiTests/Pods-gurunaviapiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7263EAECB4EBF5C0481C6BB0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gurunaviapi/Pods-gurunaviapi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		807264154F6777AFE1CE4165 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gurunaviapiUITests/Pods-gurunaviapiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		843DBAC1922B54C491D3EC7C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		92DADFF33FCF09FDB739EF1B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gurunaviapiTests/Pods-gurunaviapiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95C6CB6656FEA87DD5C81AB4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AAEFE31A6F229E431AB89163 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gurunaviapi/Pods-gurunaviapi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0DD049ED39941C3C28DD12E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E78DB77B1C6ADB5F0042D627 /* Sources */ = {
@@ -398,6 +569,7 @@
 		};
 		E78DB7A81C6ADB5F0042D627 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C908102D4866BA4435E24BB /* Pods-gurunaviapi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = gurunaviapi/Info.plist;
@@ -409,6 +581,7 @@
 		};
 		E78DB7A91C6ADB5F0042D627 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 623A1BA2A6931FE9B1E530CD /* Pods-gurunaviapi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = gurunaviapi/Info.plist;
@@ -420,6 +593,7 @@
 		};
 		E78DB7AB1C6ADB5F0042D627 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1519E3D2C12673471E884BB /* Pods-gurunaviapiTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = gurunaviapiTests/Info.plist;
@@ -432,6 +606,7 @@
 		};
 		E78DB7AC1C6ADB5F0042D627 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49F595D83174EC178B828697 /* Pods-gurunaviapiTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = gurunaviapiTests/Info.plist;
@@ -444,6 +619,7 @@
 		};
 		E78DB7AE1C6ADB5F0042D627 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBF143CFDA68ACE5CA9E0FDB /* Pods-gurunaviapiUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = gurunaviapiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -456,6 +632,7 @@
 		};
 		E78DB7AF1C6ADB5F0042D627 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80740C595642B3BDB535E463 /* Pods-gurunaviapiUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = gurunaviapiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -485,6 +662,7 @@
 				E78DB7A91C6ADB5F0042D627 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E78DB7AA1C6ADB5F0042D627 /* Build configuration list for PBXNativeTarget "gurunaviapiTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +671,7 @@
 				E78DB7AC1C6ADB5F0042D627 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E78DB7AD1C6ADB5F0042D627 /* Build configuration list for PBXNativeTarget "gurunaviapiUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +680,7 @@
 				E78DB7AF1C6ADB5F0042D627 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
