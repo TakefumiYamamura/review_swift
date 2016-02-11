@@ -10,12 +10,14 @@
 		0D15DDFCD073DC7F3AAC2B71 /* Pods_gurunaviapiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AADEE5B94CEB7F5E300A95 /* Pods_gurunaviapiUITests.framework */; };
 		AD65FDFB5E14A63FA1C4DC58 /* Pods_gurunaviapi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745FC7CA565F17F32F6AFFCD /* Pods_gurunaviapi.framework */; };
 		E78DB7831C6ADB5F0042D627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DB7821C6ADB5F0042D627 /* AppDelegate.swift */; };
-		E78DB7851C6ADB5F0042D627 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DB7841C6ADB5F0042D627 /* ViewController.swift */; };
 		E78DB7881C6ADB5F0042D627 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78DB7861C6ADB5F0042D627 /* Main.storyboard */; };
 		E78DB78A1C6ADB5F0042D627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E78DB7891C6ADB5F0042D627 /* Assets.xcassets */; };
 		E78DB78D1C6ADB5F0042D627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78DB78B1C6ADB5F0042D627 /* LaunchScreen.storyboard */; };
 		E78DB7981C6ADB5F0042D627 /* gurunaviapiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DB7971C6ADB5F0042D627 /* gurunaviapiTests.swift */; };
 		E78DB7A31C6ADB5F0042D627 /* gurunaviapiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DB7A21C6ADB5F0042D627 /* gurunaviapiUITests.swift */; };
+		E78DB7B31C6ADF5E0042D627 /* ShopListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DB7B21C6ADF5E0042D627 /* ShopListTableViewController.swift */; };
+		E78DB7B51C6ADF7F0042D627 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DB7B41C6ADF7F0042D627 /* WebViewController.swift */; };
+		E78DB7B71C6C14160042D627 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DB7B61C6C14160042D627 /* Restaurant.swift */; };
 		EB14CAAACBB7D32DE7B5A463 /* Pods_gurunaviapiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2453C87F3525FA9970A5EC83 /* Pods_gurunaviapiTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +50,6 @@
 		DBF143CFDA68ACE5CA9E0FDB /* Pods-gurunaviapiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gurunaviapiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gurunaviapiUITests/Pods-gurunaviapiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E78DB77F1C6ADB5F0042D627 /* gurunaviapi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gurunaviapi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78DB7821C6ADB5F0042D627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E78DB7841C6ADB5F0042D627 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E78DB7871C6ADB5F0042D627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E78DB7891C6ADB5F0042D627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E78DB78C1C6ADB5F0042D627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +60,9 @@
 		E78DB79E1C6ADB5F0042D627 /* gurunaviapiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gurunaviapiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78DB7A21C6ADB5F0042D627 /* gurunaviapiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gurunaviapiUITests.swift; sourceTree = "<group>"; };
 		E78DB7A41C6ADB5F0042D627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E78DB7B21C6ADF5E0042D627 /* ShopListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopListTableViewController.swift; sourceTree = "<group>"; };
+		E78DB7B41C6ADF7F0042D627 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		E78DB7B61C6C14160042D627 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +142,9 @@
 			isa = PBXGroup;
 			children = (
 				E78DB7821C6ADB5F0042D627 /* AppDelegate.swift */,
-				E78DB7841C6ADB5F0042D627 /* ViewController.swift */,
+				E78DB7B21C6ADF5E0042D627 /* ShopListTableViewController.swift */,
+				E78DB7B61C6C14160042D627 /* Restaurant.swift */,
+				E78DB7B41C6ADF7F0042D627 /* WebViewController.swift */,
 				E78DB7861C6ADB5F0042D627 /* Main.storyboard */,
 				E78DB7891C6ADB5F0042D627 /* Assets.xcassets */,
 				E78DB78B1C6ADB5F0042D627 /* LaunchScreen.storyboard */,
@@ -430,8 +436,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E78DB7851C6ADB5F0042D627 /* ViewController.swift in Sources */,
+				E78DB7B71C6C14160042D627 /* Restaurant.swift in Sources */,
 				E78DB7831C6ADB5F0042D627 /* AppDelegate.swift in Sources */,
+				E78DB7B51C6ADF7F0042D627 /* WebViewController.swift in Sources */,
+				E78DB7B31C6ADF5E0042D627 /* ShopListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
